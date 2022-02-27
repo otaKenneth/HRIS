@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+
+@import '~tailwindcss/dist/tailwind.min.css';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/v4-shims';
+
+// bootstrap-datepicker
+@import '~bootstrap-select/dist/css/bootstrap-select.min.css';
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css';
+
+// vuetify
+@import '~@mdi/font/css/materialdesignicons.min.css';
+@import '~vuetify/dist/vuetify.min.css';

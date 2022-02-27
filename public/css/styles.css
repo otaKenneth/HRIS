@@ -1,0 +1,40 @@
+/* main display */
+main{
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  padding-left: 0px;
+  /* padding-top: 20px; */
+  overflow: auto;
+}
+
+div.container {
+  padding: 20px 10px;
+}
+
+div.img-container{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #e2e2e2;
+  margin: auto;
+  border: solid gray 1px;
+  border-radius: 1rem;
+}
+
+img.emp_img{
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.complete{
+  color: #13b713;
+  font-weight: bold;
+}
+
+.thead-sticky tr th{
+  position: sticky;
+  box-shadow: lightslategrey 0 2px 2px 0px;
+}
