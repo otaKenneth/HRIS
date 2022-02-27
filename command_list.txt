@@ -1,0 +1,4 @@
+run xampp
+php artisan serve
+php artisan migrate
+npm run watch
