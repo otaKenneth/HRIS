@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -20,11 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-
     public function index()
     {
-        // dd(getdate());
-        // $m_date = getdate()['month'] ." ". getdate()['mday'] .", ". getdate()['year'];
         $m_date = date('M d, Y');
         return view('home', compact('m_date'));
     }

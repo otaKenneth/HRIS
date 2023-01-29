@@ -219,12 +219,17 @@ class EmployeeController extends Controller
             'tnum' => 'string|nullable'
         ]);
 
-        User::where('id', $employee)->update($data);
+        $resp = User::where('id', $employee)->update($data);
+
+        return response([
+            'success' => true,
+            'data' => $resp
+        ]);
     }
 
     public function update_jobInfo(Request $request, $employee)
     {
-        $this->authorize('update', User::class);
+        $this->authorize('update', auth()->user());
         $data = $this->validate($request, [
             'tax' => 'required|boolean',
             'sss' => 'required|boolean',
@@ -240,7 +245,11 @@ class EmployeeController extends Controller
             // 'job_grd' => 'integer',
         ]);
 
-        User::where('id', $employee)->update($data);
+        $resp = User::where('id', $employee)->update($data);
+        return response([
+            'success' => true,
+            'data' => $resp
+        ]);
     }
 
     public function update_empStat(Request $request, $employee)

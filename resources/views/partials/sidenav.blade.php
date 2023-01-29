@@ -17,7 +17,7 @@
                 <a class="user-name" href="{{ url('/201File/' . Auth::user()->id) }}">
                     <strong>{{ Auth::user()->username }}</strong>
                 </a>
-                <span class="user-role text-primary">{{ Auth::user()->position->value }}</span>
+                <span class="user-role text-primary">{{ Auth::user()->job_position }}</span>
                 <span class="user-status text-primary">
                     <i class="fa fa-circle"></i>
                     <span>Online</span>
