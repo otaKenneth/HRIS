@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\Models\Navigation\UserNavigationsConnections as UNConnections;
+use App\Models\Navigation\UsersNavigations;
 
 class HomeController extends Controller
 {
