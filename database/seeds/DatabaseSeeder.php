@@ -15,7 +15,11 @@ class DatabaseSeeder extends Seeder
             LookupsTableSeeder::class,
             UsersTableSeeder::class,
             HolidaysTableSeeder::class,
-            PayrollSettingsTableSeeder::class
+            PayrollSettingsTableSeeder::class,
+            ShiftsTableSeeder::class,
+            UserNavigationsTableSeeder::class,
+            UserSubNavigationsTableSeeder::class,
+            SubLevelNavigationsTableSeeder::class
         ]);
     }
 }

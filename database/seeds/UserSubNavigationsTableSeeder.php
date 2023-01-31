@@ -84,9 +84,9 @@ class UserSubNavigationsTableSeeder extends Seeder
             ],
             [
                 "main_nav_id" => 2,
-                "name" => "fa fa-file-o",
+                "name" => "Requests",
                 "href" => "#",
-                "icon" => "fa fa-user-injured",
+                "icon" => "fa fa-file-o",
                 "index" => 3,
                 'created_at' => date("Y-m-d h:m:s"),
                 'updated_at' => date("Y-m-d h:m:s"),

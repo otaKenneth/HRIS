@@ -18,6 +18,7 @@ class CreateUserNavigationsConnectionTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('main_nav_id');
             $table->unsignedBigInteger('sub_nav_id');
+            $table->unsignedBigInteger('sub_lvl_nav_id');
             $table->timestamps();
 
             $table->foreign('user_id')
@@ -28,6 +29,8 @@ class CreateUserNavigationsConnectionTable extends Migration
 
             $table->foreign('sub_nav_id')
                 ->references('id')->on('users_sub_navigations');
+
+            $table->index('sub_lvl_nav_id');
         });
     }
 

@@ -105,7 +105,8 @@ class User extends Authenticatable
     public function navigations()
     {
         return 
-            $this->hasManyThrough(UsersNavigations::class, UserNavigationsConnections::class, 'main_nav_id', 'id')
+            $this->hasManyThrough(UsersNavigations::class, UserNavigationsConnections::class, 'user_id', 'id', 'id', 'main_nav_id')
+            ->groupBy('user_navigations_connections.main_nav_id')
             ->with('sub_navigations');
     }
 

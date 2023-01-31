@@ -27,7 +27,7 @@ class UserNavigationsConnections extends Model
         return $this->hasOne(UsersNavigations::class, 'id', 'main_nav_id');
     }
 
-    public function sub_navigations()
+    public function sub_navigations_connection()
     {
         return $this->hasOne(UsersSubNavigations::class, 'id', 'sub_nav_id');
     }
