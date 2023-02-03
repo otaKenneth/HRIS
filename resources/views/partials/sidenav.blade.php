@@ -67,7 +67,7 @@
         <i class="fa fa-envelope"></i>
         {{-- <span class="badge badge-pill badge-success notification">0</span> --}}
     </a>
-    <a href="#">
+    <a href="{{ url('main-settings') }}">
         <i class="fa fa-cog"></i>
         {{-- <span class="badge-sonar"></span> --}}
     </a>
