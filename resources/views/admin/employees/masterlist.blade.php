@@ -41,38 +41,38 @@
                     <th>Employment Status</th>
                     <th class="text-center"><i class="fa fa-cog"></i> Action</th>
                 </tr>
-                </thead>
-                <tbody>
-                    @forelse ($users as $key => $user)
-                    <tr>
-                        <td>{{$key + 1}}</td>
-                        <td>
-                            <div>{{$user->firstname}} {{substr($user->middlename, 0,1)}}. {{$user->lastname}}</div>
-                            <div class="text-xs">{{$user->username}} - {{$user->user_level->value}}</div>
-                        </td>
-                        <td>
-                            <div>{{$user->email}}</div>
-                            <div class="text-xs">{{$user->mnum}}</div>
-                        </td>
-                        <td>
-                            <div>{{$user->employee_id}}</div>
-                            <div class="text-xs">{{$user->status->value}} - {{$user->position->value}}</div>
-                        </td>
-                        <td>
-                            <div>{{['Employed','Resigned'][$user->emp_status]}} - {{date('M d, Y', strtotime($user->hire_date))}}</div>
-                            <div class="text-xs">{{($user->reg_start) ? 'Regular' : ($user->probi_start) ? 'Probationary' : 'Trainee'}}</div>
-                        </td>
-                        <td class="d-flex justify-content-around">
-                            <a href="{{url("Employee/$user->id/Edit")}}" class="btn btn-warning text-xs text-dark" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fa fa-user-edit"></i></a>
-                            {{-- <a href="" class="btn text-xs text-dark" style="background-color: #90cdf4;" data-placement="bottom" title="View"><i class="fa fa-eye"></i></a> --}}
-                        </td>
-                    </tr>
-                    @empty
-                    <tr>
-                        <td class="text-center bg-red-300" colspan="6">No Results Found.</td>
-                    </tr>
-                    @endforelse
-                </tbody>
+            </thead>
+            <tbody>
+                @forelse ($users as $key => $user)
+                <tr>
+                    <td>{{$key + 1}}</td>
+                    <td>
+                        <div>{{$user->firstname}} {{substr($user->middlename, 0,1)}}. {{$user->lastname}}</div>
+                        <div class="text-xs">{{$user->username}} - {{$user->user_level->value}}</div>
+                    </td>
+                    <td>
+                        <div>{{$user->email}}</div>
+                        <div class="text-xs">{{$user->mnum}}</div>
+                    </td>
+                    <td>
+                        <div>{{$user->employee_id}}</div>
+                        <div class="text-xs">{{$user->position->value}}</div>
+                    </td>
+                    <td>
+                        <div class="text-xs">{{$user->status->value}}</div>
+                        <div>{{['Employed','Resigned'][$user->emp_status]}} - {{date('M d, Y', strtotime($user->hire_date))}}</div>
+                    </td>
+                    <td class="d-flex justify-content-around">
+                        <a href="{{url("Employee/$user->id/Edit")}}" class="btn btn-warning text-xs text-dark" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fa fa-user-edit"></i></a>
+                        {{-- <a href="" class="btn text-xs text-dark" style="background-color: #90cdf4;" data-placement="bottom" title="View"><i class="fa fa-eye"></i></a> --}}
+                    </td>
+                </tr>
+                @empty
+                <tr>
+                    <td class="text-center bg-red-300" colspan="6">No Results Found.</td>
+                </tr>
+                @endforelse
+            </tbody>
         </table>
     </div>
 </div>

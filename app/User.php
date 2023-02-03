@@ -6,6 +6,8 @@ use App\Payroll\Payroll;
 use App\Request\Leave;
 use App\Request\Override;
 use App\Request\Overtime;
+use App\Models\Navigation\UsersNavigations;
+use App\Models\Navigation\UserNavigationsConnections;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -98,6 +100,14 @@ class User extends Authenticatable
     public function user_level()
     {
         return $this->hasOne(Lookup::class, 'id', 'userlvl');
+    }
+
+    public function navigations()
+    {
+        return 
+            $this->hasManyThrough(UsersNavigations::class, UserNavigationsConnections::class, 'user_id', 'id', 'id', 'main_nav_id')
+            ->groupBy('user_navigations_connections.main_nav_id')
+            ->with('sub_navigations');
     }
 
     public function admin ()
