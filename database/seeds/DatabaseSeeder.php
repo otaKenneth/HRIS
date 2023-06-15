@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             ShiftsTableSeeder::class,
             UserNavigationsTableSeeder::class,
             UserSubNavigationsTableSeeder::class,
-            SubLevelNavigationsTableSeeder::class
+            SubLevelNavigationsTableSeeder::class,
+            UserNavigationsConnectionsTableSeeder::class
         ]);
     }
 }
