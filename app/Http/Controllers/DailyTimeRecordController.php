@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\DailyTimeRecord as DTR;
-use App\Holiday;
+use App\Models\DailyTimeRecord as DTR;
+use App\Models\Holiday;
 use App\Models\Request\Leave;
 use App\Models\Request\Overtime;
 use App\User;

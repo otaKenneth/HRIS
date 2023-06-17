@@ -1,13 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models\Admin;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class DailyTimeRecord extends Model
+class Admin extends Model
 {
-    use SoftDeletes;
     protected $guarded = [];
 
     public function user ()

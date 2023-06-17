@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Salary;
-use App\SalaryHistory;
+use App\Models\Salary;
+use App\Models\SalaryHistory;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

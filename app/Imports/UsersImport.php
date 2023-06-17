@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Lookup;
+use App\Models\Lookup;
 use App\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Collection;

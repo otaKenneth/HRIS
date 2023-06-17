@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Admin;
+use App\Models\Admin;
 use App\Exports\UsersExport;
 use App\Imports\UsersImport;
-use App\Lookup;
-use App\SuperAdmin;
+use App\Models\Lookup;
+use App\Models\SuperAdmin;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;

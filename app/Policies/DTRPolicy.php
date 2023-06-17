@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\DailyTimeRecord;
+use App\Models\DailyTimeRecord;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class DTRPolicy

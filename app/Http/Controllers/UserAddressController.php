@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use App\UserAddress;
+use App\Models\UserAddress;
 use Illuminate\Http\Request;
 
 class UserAddressController extends Controller

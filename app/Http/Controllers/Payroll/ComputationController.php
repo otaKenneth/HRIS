@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Payroll;
 
-use App\DailyTimeRecord;
+use App\Models\DailyTimeRecord;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Payroll\Payroll;

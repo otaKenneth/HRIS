@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Admin;
+use App\Models\Admin;
 use App\Notifications\NewRequest;
 use App\Models\Request\Overtime;
 use App\User;

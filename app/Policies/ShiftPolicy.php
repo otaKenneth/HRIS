@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Shift;
+use App\Models\Shift;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ShiftPolicy

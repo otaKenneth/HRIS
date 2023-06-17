@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Holiday;
+use App\Models\Holiday;
 use App\Models\Request\Leave;
 use Illuminate\Http\Request;
 

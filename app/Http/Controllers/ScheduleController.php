@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Schedule;
+use App\Models\Schedule;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;

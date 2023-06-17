@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Lookup;
+use App\Models\Lookup;
 use Illuminate\Http\Request;
 
 class LookupController extends Controller

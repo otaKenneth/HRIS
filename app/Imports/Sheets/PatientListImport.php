@@ -2,7 +2,7 @@
 
 namespace App\Imports\Sheets;
 
-use App\Lookup;
+use App\Models\Lookup;
 use App\Models\Patient\Patient;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;

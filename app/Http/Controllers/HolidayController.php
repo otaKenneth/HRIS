@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\CreateHolidayRecord;
-use App\Holiday;
+use App\Models\Holiday;
 use App\User;
 use App\Http\Controllers\DailyTimeRecordController;
 use Illuminate\Http\Request;

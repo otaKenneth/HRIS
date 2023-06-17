@@ -1,11 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Admin extends Model
+class UserAddress extends Model
 {
+    //
     protected $guarded = [];
 
     public function user ()
