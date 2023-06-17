@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Request\Override;
+use App\Models\Request\Override;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OverridePolicy

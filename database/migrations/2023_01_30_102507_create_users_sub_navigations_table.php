@@ -20,6 +20,7 @@ class CreateUsersSubNavigationsTable extends Migration
             $table->string('href')->nullable();
             $table->string('icon')->nullable();
             $table->integer('index')->nullable();
+            $table->boolean('visible')->default(true);
 
             $table->timestamps();
             

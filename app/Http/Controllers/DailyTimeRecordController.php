@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\DailyTimeRecord as DTR;
 use App\Holiday;
-use App\Request\Leave;
-use App\Request\Overtime;
+use App\Models\Request\Leave;
+use App\Models\Request\Overtime;
 use App\User;
 use DateInterval;
 use DatePeriod;

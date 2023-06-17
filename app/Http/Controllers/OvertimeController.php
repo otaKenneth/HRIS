@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use App\Notifications\NewRequest;
-use App\Request\Overtime;
+use App\Models\Request\Overtime;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\DailyTimeRecordController;

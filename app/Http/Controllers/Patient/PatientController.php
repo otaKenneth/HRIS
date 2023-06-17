@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Patient;
 use App\Exports\PatientsExport;
 use App\Http\Controllers\Controller;
 use App\Imports\PatientsImport;
-use App\Patient\Patient;
+use App\Models\Patient\Patient;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Str;
@@ -58,7 +58,7 @@ class PatientController extends Controller
     {
         $data = $this->validate($request, [
             'firstname' => 'required|string',
-            'middlename' => 'required|string',
+            'middlename' => 'nullable|string',
             'lastname' => 'required|string',
             'age' => 'required|integer',
             'birthdate' => 'required|date|date_format:m/d/Y',
@@ -95,7 +95,7 @@ class PatientController extends Controller
     {
         $data = $this->validate($request, [
             'firstname' => 'required|string',
-            'middlename' => 'required|string',
+            'middlename' => 'nullable|string',
             'lastname' => 'required|string',
             'age' => 'required|integer',
             'birthdate' => 'required|date|date_format:m/d/Y',

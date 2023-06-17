@@ -2,7 +2,7 @@
 
 namespace App\Imports\Sheets;
 
-use App\Patient\PatientRecord;
+use App\Models\Patient\PatientRecord;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;

@@ -2,7 +2,7 @@
 
 namespace App\Imports\Sheets;
 
-use App\Patient\PatientHospitalization;
+use App\Models\Patient\PatientHospitalization;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Request\Leave;
+use App\Models\Request\Leave;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class LeavePolicy

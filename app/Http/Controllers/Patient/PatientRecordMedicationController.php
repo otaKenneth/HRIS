@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Patient;
 
 use App\Http\Controllers\Controller;
-use App\Patient\Patient;
-use App\Patient\PatientRecord;
-use App\Patient\PatientRecordMedication;
+use App\Models\Patient\Patient;
+use App\Models\Patient\PatientRecord;
+use App\Models\Patient\PatientRecordMedication;
 use Illuminate\Http\Request;
 
 class PatientRecordMedicationController extends Controller

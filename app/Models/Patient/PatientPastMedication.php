@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Patient;
+namespace App\Models\Patient;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PatientRecordDiagnosis extends Model
+class PatientPastMedication extends Model
 {
     //
     protected $guarded = [];

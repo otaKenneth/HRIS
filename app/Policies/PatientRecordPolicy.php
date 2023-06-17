@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Patient\PatientRecord;
+use App\Models\Patient\PatientRecord;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PatientRecordPolicy

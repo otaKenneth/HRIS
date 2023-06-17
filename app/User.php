@@ -2,10 +2,10 @@
 
 namespace App;
 
-use App\Payroll\Payroll;
-use App\Request\Leave;
-use App\Request\Override;
-use App\Request\Overtime;
+use App\Models\Payroll\Payroll;
+use App\Models\Request\Leave;
+use App\Models\Request\Override;
+use App\Models\Request\Overtime;
 use App\Models\Navigation\UsersNavigations;
 use App\Models\Navigation\UserNavigationsConnections;
 use Illuminate\Notifications\Notifiable;

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Payroll;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Payroll\Payroll;
+use App\Models\Payroll\Payroll;
 use App\Http\Controllers\Controller;
 
 class PayslipController extends Controller

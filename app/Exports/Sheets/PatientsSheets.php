@@ -2,8 +2,8 @@
 
 namespace App\Exports\Sheets;
 
-use App\Patient\Patient;
-use App\Patient\PatientRecord;
+use App\Models\Patient\Patient;
+use App\Models\Patient\PatientRecord;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\FromArray;

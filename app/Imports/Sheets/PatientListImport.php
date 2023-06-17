@@ -3,7 +3,7 @@
 namespace App\Imports\Sheets;
 
 use App\Lookup;
-use App\Patient\Patient;
+use App\Models\Patient\Patient;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;
 use Illuminate\Contracts\Queue\ShouldQueue;

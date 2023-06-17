@@ -42,7 +42,14 @@ class UserNavigationsConnectionsTableSeeder extends Seeder
                 'sub_nav_id' => 13,
                 'created_at' => date("Y-m-d h:m:s"),
                 'updated_at' => date("Y-m-d h:m:s"),
-            ]
+            ],
+            [
+                'user_id' => 1,
+                'main_nav_id' => 5,
+                'sub_nav_id' => 14,
+                'created_at' => date("Y-m-d h:m:s"),
+                'updated_at' => date("Y-m-d h:m:s"),
+            ],
         ];
 
         foreach ($superadmin_navs as $key => $nav) {

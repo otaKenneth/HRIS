@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Payroll;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Payroll\Payroll;
-use App\Payroll\Setting;
+use App\Models\Payroll\Payroll;
+use App\Models\Payroll\Setting;
 use App\Rules\hasPercent;
 use App\User;
 use Illuminate\Support\Arr;

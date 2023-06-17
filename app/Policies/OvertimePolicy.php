@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Request\Overtime;
+use App\Models\Request\Overtime;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OvertimePolicy

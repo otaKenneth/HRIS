@@ -159,4 +159,19 @@ class UserSubNavigationsTableSeeder extends Seeder
             ],
         ];
     }
+
+    private function getMainSettingNavs()
+    {
+        return [
+            [
+                "main_nav_id" => 5,
+                "name" => "User Navigation Connections",
+                "href" => "Main-Settings/User-Nav-Connections",
+                "icon" => "fa fa-user",
+                "index" => 1,
+                'created_at' => date("Y-m-d h:m:s"),
+                'updated_at' => date("Y-m-d h:m:s"),
+            ],
+        ];
+    }
 }

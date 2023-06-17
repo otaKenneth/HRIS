@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Patient;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Patient\Patient;
-use App\Patient\PatientRecord;
-use App\Patient\PatientRecordDiagnosis;
+use App\Models\Patient\Patient;
+use App\Models\Patient\PatientRecord;
+use App\Models\Patient\PatientRecordDiagnosis;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 

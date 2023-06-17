@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Holiday;
-use App\Request\Leave;
+use App\Models\Request\Leave;
 use Illuminate\Http\Request;
 
 class CalendarController extends Controller

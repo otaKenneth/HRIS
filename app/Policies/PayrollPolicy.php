@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\User;
-use App\Payroll\Payroll;
+use App\Models\Payroll\Payroll;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PayrollPolicy

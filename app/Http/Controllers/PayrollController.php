@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\DailyTimeRecord;
-use App\Payroll\Payroll;
-use App\Payroll\Setting;
+use App\Models\Payroll\Payroll;
+use App\Models\Payroll\Setting;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;

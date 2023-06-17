@@ -28,33 +28,35 @@
     <div class="sidebar-menu">
         <ul>
             @foreach (Auth::user()->navigations as $mains)
-                <li class="header-menu">
-                    <span>{{$mains->name}}</span>
-                </li>
-                @foreach ($mains->sub_navigations as $sub_navs)
-                    @if ($sub_navs->href === "#")
-                        <li class="sidebar-dropdown">
-                            <a href="{{ url($sub_navs->href) }}">
-                                <i class="{{$sub_navs->icon}}"></i>
-                                <span>{{$sub_navs->name}}</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li>
-                                        <a href="{{ url('Patients') }}">List</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    @else
-                        <li class="">
-                            <a href="{{ url($sub_navs->href) }}">
-                                <i class="{{ $sub_navs->icon }}"></i>
-                                <span>{{$sub_navs->name}}</span>
-                            </a>
-                        </li>
-                    @endif
-                @endforeach
+                @if ($mains->visible)
+                    <li class="header-menu">
+                        <span>{{$mains->name}}</span>
+                    </li>
+                    @foreach ($mains->sub_navigations as $sub_navs)
+                        @if ($sub_navs->href === "#")
+                            <li class="sidebar-dropdown">
+                                <a href="{{ url($sub_navs->href) }}">
+                                    <i class="{{$sub_navs->icon}}"></i>
+                                    <span>{{$sub_navs->name}}</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="{{ url('Patients') }}">List</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        @else
+                            <li class="">
+                                <a href="{{ url($sub_navs->href) }}">
+                                    <i class="{{ $sub_navs->icon }}"></i>
+                                    <span>{{$sub_navs->name}}</span>
+                                </a>
+                            </li>
+                        @endif
+                    @endforeach
+                @endif
             @endforeach
         </ul>
     </div>
@@ -67,7 +69,7 @@
         <i class="fa fa-envelope"></i>
         {{-- <span class="badge badge-pill badge-success notification">0</span> --}}
     </a>
-    <a href="#">
+    <a href="/Settings">
         <i class="fa fa-cog"></i>
         {{-- <span class="badge-sonar"></span> --}}
     </a>

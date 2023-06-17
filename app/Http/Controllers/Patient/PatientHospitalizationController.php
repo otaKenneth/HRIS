@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Patient;
 
 use App\Http\Controllers\Controller;
-use App\Patient\Patient;
-use App\Patient\PatientHospitalization;
-use App\Patient\PatientRecord;
+use App\Models\Patient\Patient;
+use App\Models\Patient\PatientHospitalization;
+use App\Models\Patient\PatientRecord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

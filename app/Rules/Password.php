@@ -28,7 +28,7 @@ class Password implements Rule
      */
     public function passes($attribute, $value)
     {
-        return Hash::check($value, auth()->user()->password);
+        return Hash::check($value, auth()->user()->current_password);
     }
 
     /**

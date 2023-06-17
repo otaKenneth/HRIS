@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Admin;
 use App\Events\LeaveRequest;
 use App\Notifications\NewRequest;
-use App\Request\Override;
+use App\Models\Request\Override;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

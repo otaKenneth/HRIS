@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Admin;
 use App\Events\LeaveRequest;
 use App\Notifications\NewRequest;
-use App\Request\Leave;
+use App\Models\Request\Leave;
 use App\User;
 use Illuminate\Http\Request;
 

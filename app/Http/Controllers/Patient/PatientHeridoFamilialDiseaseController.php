@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Patient;
 
 use App\Http\Controllers\Controller;
-use App\Patient\Patient;
-use App\Patient\PatientHeridoFamilialDisease;
+use App\Models\Patient\Patient;
+use App\Models\Patient\PatientHeridoFamilialDisease;
 use Illuminate\Http\Request;
 
 class PatientHeridoFamilialDiseaseController extends Controller
