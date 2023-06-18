@@ -2,6 +2,14 @@
 
 namespace App;
 
+use App\Models\Admin;
+use App\Models\SuperAdmin;
+use App\Models\InOut;
+use App\Models\DailyTimeRecord;
+use App\Models\Salary;
+use App\Models\SalaryHistory;
+use App\Models\Schedule;
+use App\Models\UserAddress;
 use App\Models\Payroll\Payroll;
 use App\Models\Request\Leave;
 use App\Models\Request\Override;

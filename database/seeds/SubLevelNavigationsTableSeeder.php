@@ -93,4 +93,17 @@ class SubLevelNavigationsTableSeeder extends Seeder
             ],
         ];
     }
+
+    function getMainSettingsNavs() {
+        return [
+            [
+                "sub_nav_id" => 14,
+                "name" => "User Navigations",
+                "href" => "Settings/user-navigations",
+                "index" => 1,
+                'created_at' => date("Y-m-d h:m:s"),
+                'updated_at' => date("Y-m-d h:m:s"),
+            ],
+        ];
+    }
 }
