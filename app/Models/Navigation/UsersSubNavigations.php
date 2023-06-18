@@ -12,4 +12,8 @@ class UsersSubNavigations extends Model
     {
         return $this->belongsTo(UsersNavigation::class);
     }
+
+    function sub_lvl() {
+        return $this->hasMany(SubLevelNavigations::class, 'sub_nav_id', 'id');
+    }
 }

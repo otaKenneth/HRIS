@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\MainSettings;
 
 use App\Http\Controllers\Controller;
-use App\Models\Navigation\SubLevelNavigations;
+use App\Models\Navigation\UsersSubNavigations;
 use Illuminate\Http\Request;
 
 class MainSettingsController extends Controller
 {
     //
     public function index() {
-        $navigations = SubLevelNavigations::where('sub_nav_id', 14)->get();
+        $navigations = UsersSubNavigations::where('main_nav_id', 5)->get();
 
         return view('mainsettings', compact('navigations'));
     }
