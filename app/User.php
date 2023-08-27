@@ -10,6 +10,7 @@ use App\Models\Salary;
 use App\Models\SalaryHistory;
 use App\Models\Schedule;
 use App\Models\UserAddress;
+use App\Models\Lookup;
 use App\Models\Payroll\Payroll;
 use App\Models\Request\Leave;
 use App\Models\Request\Override;

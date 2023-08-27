@@ -12,7 +12,9 @@ class UsersNavigations extends Model
 
     public function sub_navigations () {
         return 
-            $this->hasManyThrough(SubNavs::class, UNConnections::class, 'main_nav_id', 'id', 'id', 'sub_nav_id');
+            $this->hasManyThrough(SubNavs::class, UNConnections::class, 'main_nav_id', 'id', 'id', 'sub_nav_id')
+            ->groupBy('user_navigations_connections.sub_nav_id')
+            ->with('sub_lvl_navigations');
     }
 
     public function user_nav_connections()

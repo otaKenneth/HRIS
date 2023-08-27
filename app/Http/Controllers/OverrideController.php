@@ -193,10 +193,10 @@ class OverrideController extends Controller
 
     public function update (Request $request, Override $override)
     {
-        $request['in'] = date('H:i', $request->in);
-        $request['breakOut'] = date('H:i', $request->breakOut);
-        $request['breakIn'] = date('H:i', $request->breakIn);
-        $request['out'] = date('H:i', $request->out);
+        $request['in'] = date('H:i', strtotime($request->in));
+        $request['breakOut'] = date('H:i', strtotime($request->breakOut));
+        $request['breakIn'] = date('H:i', strtotime($request->breakIn));
+        $request['out'] = date('H:i', strtotime($request->out));
         
         $data = $this->validate($request, [
             'date' => 'required|date|date_format:m/d/Y',

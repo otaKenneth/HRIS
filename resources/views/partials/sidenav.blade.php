@@ -41,9 +41,11 @@
                                 </a>
                                 <div class="sidebar-submenu">
                                     <ul>
-                                        <li>
-                                            <a href="{{ url('Patients') }}">List</a>
-                                        </li>
+                                        @foreach ($sub_navs->sub_lvl_navigations as $sub_lvl_nav)
+                                            <li>
+                                                <a href="{{ url($sub_lvl_nav->href) }}">{{$sub_lvl_nav->name}}</a>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </li>

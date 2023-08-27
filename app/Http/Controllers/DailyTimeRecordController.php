@@ -392,10 +392,15 @@ class DailyTimeRecordController extends Controller
 
     private function setTime($user, $date, $override = null)
     {
-        $this->time['in'] = $user->ins()->where('created_at', 'like', "{$date}%")->first()['created_at'];
-        $this->time['breakOut'] = $user->breakOuts()->where('created_at', 'like', "{$date}%")->first()['created_at'];
-        $this->time['breakIn'] = $user->breakIns()->where('created_at', 'like', "{$date}%")->first()['created_at'];
-        $this->time['out'] = $user->outs()->where('created_at', 'like', "{$date}%")->first()['created_at'];
+        $ins = $user->ins()->where('created_at', 'like', "{$date}%")->first();
+        $outs = $user->outs()->where('created_at', 'like', "{$date}%")->first();
+        $bins = $user->breakIns()->where('created_at', 'like', "{$date}%")->first();
+        $bouts = $user->breakOuts()->where('created_at', 'like', "{$date}%")->first();
+
+        $this->time['in'] = $ins ? $ins['created_at']:null;
+        $this->time['breakOut'] = $bouts ? $bouts['created_at']:null;
+        $this->time['breakIn'] = $bins ? $bins['created_at']:null;
+        $this->time['out'] = $outs ? $outs['created_at']:null;
 
         if ($override !== null) {
             $this->schedule['tag'][] = "Overriden";
